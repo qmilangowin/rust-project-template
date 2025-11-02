@@ -1,6 +1,10 @@
-# {{project_name}}
+# Rust Project Template
 
-{{project_description}}
+Run it via: 
+
+```bash
+cargo generate gh:qmilangowin/rust-project-template
+```
 
 ## Development Setup
 
