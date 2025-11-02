@@ -3,6 +3,7 @@
 Run it via: 
 
 ```bash
+cargo install cargo-generate
 cargo generate gh:qmilangowin/rust-project-template
 ```
 
