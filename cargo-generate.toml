@@ -20,15 +20,3 @@ default = "{{authors}}"
 type = "bool"
 prompt = "Include async runtime (tokio)?"
 default = true
-
-[hooks]
-post = [
-    "echo '✓ Project {{project_name}} created!'",
-    "echo ''",
-    "echo 'Next steps:'",
-    "echo '  cd {{project_name}}'",
-    "echo '  just install-hooks  # Install pre-commit hooks'",
-    "echo '  just build          # Build the project'",
-    "echo ''",
-    "echo 'Available commands: just --list'",
-]
