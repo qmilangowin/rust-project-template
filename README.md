@@ -56,7 +56,7 @@ This project uses GitHub Actions for:
 
 ## Dependencies
 
-Automated dependency updates via Renovate Bot.
+Automated dependency updates via GitHub Dependabot (configured in `.github/dependabot.yml`).
 
 ## License
 
