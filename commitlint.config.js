@@ -1,5 +1,11 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
+  ignores: [
+    // Ignore Dependabot commits (they use "Bump" format)
+    (message) => message.startsWith('Bump '),
+    // Ignore merge commits
+    (message) => message.startsWith('Merge '),
+  ],
   rules: {
     'type-enum': [
       2,
