@@ -1,0 +1,12 @@
+[package]
+name = "{{project_name}}"
+version = "0.1.0"
+edition = "2021"
+authors = ["{{author_name}}"]
+description = "{{project_description}}"
+
+[dependencies]
+{% if use_async -%}
+tokio = { version = "1.48.0", features = ["full"] }
+{% endif -%}
+anyhow = "1.0"

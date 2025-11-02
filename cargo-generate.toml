@@ -1,0 +1,34 @@
+[template]
+cargo_generate_version = ">=0.18.0"
+
+[placeholders.project_name]
+type = "string"
+prompt = "What is your project name?"
+regex = "^[a-z][a-z0-9-]*$"
+
+[placeholders.project_description]
+type = "string"
+prompt = "Project description?"
+default = "A Rust project with best practices"
+
+[placeholders.author_name]
+type = "string"
+prompt = "Author name?"
+default = "{{authors}}"
+
+[placeholders.use_async]
+type = "bool"
+prompt = "Include async runtime (tokio)?"
+default = true
+
+[hooks]
+post = [
+    "echo '✓ Project {{project_name}} created!'",
+    "echo ''",
+    "echo 'Next steps:'",
+    "echo '  cd {{project_name}}'",
+    "echo '  just install-hooks  # Install pre-commit hooks'",
+    "echo '  just build          # Build the project'",
+    "echo ''",
+    "echo 'Available commands: just --list'",
+]
